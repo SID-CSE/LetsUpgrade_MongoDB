@@ -64,7 +64,7 @@ This repository contains two distinct mini-projects developed to solidify the sk
 | **Focus** | Building a comprehensive **movie database**, including details on cast, director, box office, and awards. |
 | **Key Skill** | Complex **filtering** and **sorting** queries, and using the **Aggregation Framework** to group movies by genre or analyze data points like awards and box office revenue. |
 | **File** | `movie_database.js` |
-| **Dedicated README** | [**Movie Database System README**](./Movie_Database_System/README.md) |
+| **Dedicated README** | [**Movie Database System README**](https://github.com/SID-CSE/LetsUpgrade_MongoDB/blob/Movie_Database_System/README.md) |
 
 ---
 
