@@ -1,0 +1,260 @@
+[{
+  "_id": 1,
+  "title": "The Silent Library",
+  "author": {
+    "name": "Arundhati Menon",
+    "born": 1982
+  },
+  "genre": [
+    "Mystery",
+    "Thriller"
+  ],
+  "publisher": "Penguin India",
+  "publishedYear": 2018,
+  "pages": 325,
+  "language": "English",
+  "availableCopies": 4,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.3
+    },
+    {
+      "source": "Library Users",
+      "score": 4.1
+    }
+  ],
+  "borrowedHistory": [
+    {
+      "member": "Siddharth Kumar",
+      "borrowedOn": {
+        "$date": "2023-07-12T00:00:00.000Z"
+      },
+      "returnedOn": {
+        "$date": "2023-08-01T00:00:00.000Z"
+      }
+    }
+  ],
+  "tags": [
+    "mystery",
+    "crime",
+    "fiction"
+  ]
+},
+{
+  "_id": 2,
+  "title": "Learning Python",
+  "author": {
+    "name": "Mark Lutz",
+    "born": 1956
+  },
+  "genre": [
+    "Education",
+    "Programming"
+  ],
+  "publisher": "O'Reilly Media",
+  "publishedYear": 2020,
+  "pages": 1648,
+  "language": "English",
+  "availableCopies": 7,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.6
+    }
+  ],
+  "borrowedHistory": [
+    {
+      "member": "Santwona",
+      "borrowedOn": {
+        "$date": "2024-01-10T00:00:00.000Z"
+      },
+      "returnedOn": {
+        "$date": "2024-02-02T00:00:00.000Z"
+      }
+    }
+  ],
+  "tags": [
+    "python",
+    "coding",
+    "reference"
+  ]
+},
+{
+  "_id": 3,
+  "title": "Digital Fortress",
+  "author": {
+    "name": "Dan Brown",
+    "born": 1964
+  },
+  "genre": [
+    "Tech Thriller"
+  ],
+  "publisher": "St. Martin’s Press",
+  "publishedYear": 1998,
+  "pages": 510,
+  "language": "English",
+  "availableCopies": 12,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4
+    }
+  ],
+  "borrowedHistory": [],
+  "tags": [
+    "encryption",
+    "thriller"
+  ]
+},
+{
+  "_id": 5,
+  "title": "Wings of Fire",
+  "author": {
+    "name": "A.P.J. Abdul Kalam",
+    "born": 1931
+  },
+  "genre": [
+    "Autobiography"
+  ],
+  "publisher": "Universities Press",
+  "publishedYear": 1999,
+  "pages": 180,
+  "language": "English",
+  "availableCopies": 10,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.8
+    }
+  ],
+  "borrowedHistory": [],
+  "tags": [
+    "inspiration",
+    "life",
+    "india"
+  ]
+},
+{
+  "_id": 7,
+  "title": "The Alchemist",
+  "author": {
+    "name": "Paulo Coelho",
+    "born": 1947
+  },
+  "genre": [
+    "Fiction",
+    "Philosophy"
+  ],
+  "publisher": "HarperCollins",
+  "publishedYear": 1988,
+  "pages": 208,
+  "language": "English",
+  "availableCopies": 12,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.7
+    }
+  ],
+  "borrowedHistory": [],
+  "tags": [
+    "dream",
+    "life",
+    "spiritual"
+  ]
+},
+{
+  "_id": 8,
+  "title": "Atomic Habits",
+  "author": {
+    "name": "James Clear",
+    "born": 1986
+  },
+  "genre": [
+    "Self-help",
+    "Productivity"
+  ],
+  "publisher": "Penguin Random House",
+  "publishedYear": 2018,
+  "pages": 320,
+  "language": "English",
+  "availableCopies": 5,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.8
+    }
+  ],
+  "borrowedHistory": [
+    {
+      "member": "Namratha",
+      "borrowedOn": {
+        "$date": "2024-05-10T00:00:00.000Z"
+      },
+      "returnedOn": {
+        "$date": "2024-06-02T00:00:00.000Z"
+      }
+    }
+  ],
+  "tags": [
+    "habits",
+    "growth",
+    "psychology"
+  ]
+},
+{
+  "_id": 9,
+  "title": "Clean Code",
+  "author": {
+    "name": "Robert C. Martin",
+    "born": 1952
+  },
+  "genre": [
+    "Programming"
+  ],
+  "publisher": "Prentice Hall",
+  "publishedYear": 2008,
+  "pages": 464,
+  "language": "English",
+  "availableCopies": 5,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.7
+    }
+  ],
+  "borrowedHistory": [],
+  "tags": [
+    "coding",
+    "best practices"
+  ]
+},
+{
+  "_id": 10,
+  "title": "The Monk Who Sold His Ferrari",
+  "author": {
+    "name": "Robin Sharma",
+    "born": 1964
+  },
+  "genre": [
+    "Motivation",
+    "Philosophy"
+  ],
+  "publisher": "HarperCollins",
+  "publishedYear": 1997,
+  "pages": 198,
+  "language": "English",
+  "availableCopies": 11,
+  "ratings": [
+    {
+      "source": "Goodreads",
+      "score": 4.6
+    }
+  ],
+  "borrowedHistory": [],
+  "tags": [
+    "motivation",
+    "self-help"
+  ]
+}]

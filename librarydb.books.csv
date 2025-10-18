@@ -1,0 +1,9 @@
+_id,title,author.name,author.born,genre[0],genre[1],publisher,publishedYear,pages,language,availableCopies,ratings[0].source,ratings[1].source,ratings[0].score,ratings[1].score,borrowedHistory[0].member,borrowedHistory[0].borrowedOn,borrowedHistory[0].returnedOn,tags[0],tags[1],tags[2]
+1,The Silent Library,Arundhati Menon,1982,Mystery,Thriller,Penguin India,2018,325,English,4,Goodreads,Library Users,4.3,4.1,Siddharth Kumar,2023-07-12T00:00:00.000Z,2023-08-01T00:00:00.000Z,mystery,crime,fiction
+2,Learning Python,Mark Lutz,1956,Education,Programming,O'Reilly Media,2020,1648,English,7,Goodreads,,4.6,,Santwona,2024-01-10T00:00:00.000Z,2024-02-02T00:00:00.000Z,python,coding,reference
+3,Digital Fortress,Dan Brown,1964,Tech Thriller,,St. Martin’s Press,1998,510,English,12,Goodreads,,4,,,,,encryption,thriller,
+5,Wings of Fire,A.P.J. Abdul Kalam,1931,Autobiography,,Universities Press,1999,180,English,10,Goodreads,,4.8,,,,,inspiration,life,india
+7,The Alchemist,Paulo Coelho,1947,Fiction,Philosophy,HarperCollins,1988,208,English,12,Goodreads,,4.7,,,,,dream,life,spiritual
+8,Atomic Habits,James Clear,1986,Self-help,Productivity,Penguin Random House,2018,320,English,5,Goodreads,,4.8,,Namratha,2024-05-10T00:00:00.000Z,2024-06-02T00:00:00.000Z,habits,growth,psychology
+9,Clean Code,Robert C. Martin,1952,Programming,,Prentice Hall,2008,464,English,5,Goodreads,,4.7,,,,,coding,best practices,
+10,The Monk Who Sold His Ferrari,Robin Sharma,1964,Motivation,Philosophy,HarperCollins,1997,198,English,11,Goodreads,,4.6,,,,,motivation,self-help,

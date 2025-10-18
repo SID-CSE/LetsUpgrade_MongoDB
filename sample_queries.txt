@@ -1,0 +1,46 @@
+# Sample Queries for Library Management System
+
+# 1. Show all books
+db.books.find();
+
+# 2. Filter by language
+db.books.find({ language: "English" });
+
+# 3. Filter by author
+db.books.find({ "author.name": "Dan Brown" });
+
+# 4. Books published after 2015
+db.books.find({ publishedYear: { $gte: 2015 } });
+
+# 5. Sort by newest first
+db.books.find().sort({ publishedYear: -1 });
+
+# 6. Update available copies for a book
+db.books.updateOne({ title: "Digital Fortress" }, { $set: { availableCopies: 10 } });
+
+# 7. Increment available copies for older books
+db.books.updateMany({ publishedYear: { $lt: 2010 } }, { $inc: { availableCopies: 2 } });
+
+# 8. Add tag to a book
+db.books.updateOne({ title: "Atomic Habits" }, { $push: { tags: "psychology" } });
+
+# 9. Delete one book
+db.books.deleteOne({ title: "Zero to One" });
+
+# 10. Delete books with less than 3 copies
+db.books.deleteMany({ availableCopies: { $lt: 3 } });
+
+# 11. Filter programming books
+db.books.find({ genre: "Programming" });
+
+# 12. Highly rated books
+db.books.find({ "ratings.score": { $gt: 4.5 } });
+
+# 13. Books with tags motivation or growth
+db.books.find({ tags: { $in: ["motivation", "growth"] } });
+
+# 14. Count books by language
+db.books.aggregate([{ $group: { _id: "$language", totalBooks: { $sum: 1 } } }]);
+
+# 15. Average rating of all books
+db.books.aggregate([{ $group: { _id: null, avgRating: { $avg: { $avg: "$ratings.score" } } } }]);
