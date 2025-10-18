@@ -1,89 +1,69 @@
-# 🚀 LetsUpgrade MongoDB 3 Days Bootcamp: Mini-Projects Repository
+# 📚 Library Management System (Mini Project)
 
 [![Bootcamp: LetsUpgrade MongoDB 3 Days Bootcamp](https://img.shields.io/badge/Bootcamp-LetsUpgrade%20MongoDB%203%20Days-blue)](https://www.letsupgrade.in/)
 [![Technology: MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248)](https://www.mongodb.com/)
 [![Author: Siddharth Kumar](https://img.shields.io/badge/Author-Siddharth%20Kumar-orange)](https://github.com/YourGitHubUsername) 
-[![Projects: 2 Mini-Projects](https://img.shields.io/badge/Projects-2%20Mini--Projects-red)](#mini-project-overviews)
+---
+
+## 🎯 Project Overview
+
+This mini-project demonstrates core **MongoDB concepts** using a **Library Management System** scenario. It was developed as part of the **LetsUpgrade MongoDB 3 Days Bootcamp** to showcase practical application of MongoDB's document model and query language.
+
+The primary focus is on implementing **CRUD (Create, Read, Update, Delete) operations** and performing advanced **Aggregation Queries** to manage book records effectively.
 
 ---
 
-## 💡 What is MongoDB?
+## ✨ Features and Objectives
 
-**MongoDB** is a popular, open-source **NoSQL database** that uses a document-oriented data model. It's designed for flexibility and scalability, making it an excellent choice for modern applications.
-
-Unlike traditional relational databases (like SQL), MongoDB stores data in flexible, JSON-like documents called **BSON** (Binary JSON) rather than rigid rows and columns.
-
-### Key MongoDB Concepts
-
-* **Document:** The basic unit of data (a set of key-value pairs). Documents are dynamic and can have varying fields.
-* **Collection:** A group of documents. This is analogous to a table in a relational database.
-* **Database:** A physical container for collections.
+* **CRUD Operations:** Implement basic operations for inserting, reading, updating, and deleting book records.
+* **Data Filtering:** Perform complex **read and filter** queries on the book collection.
+* **Advanced Aggregation:** Execute aggregate queries to calculate metrics like:
+    * Total number of books per genre.
+    * Average ratings for specific publishers.
+    * Books borrowed history analysis.
 
 ---
 
-## 🛠️ Core MongoDB Operations Demonstrated
+## 💾 Data Schema & Structure
 
-Both mini-projects were designed to showcase a comprehensive range of MongoDB capabilities, moving from basic data manipulation to advanced analytical queries.
+The sample book data includes a rich set of fields to facilitate complex querying:
 
-### 1. Basic Data Operations (CRUD)
-
-| Operation | MongoDB Method | Description | Demonstrated In |
-| :--- | :--- | :--- | :--- |
-| **C**reate | `db.collection.insertOne()` / `insertMany()` | Adding new documents (records) to a collection. | Both Projects |
-| **R**ead | `db.collection.find()` | Querying and retrieving documents based on criteria (filtering). | Both Projects |
-| **U**pdate | `db.collection.updateOne()` / `updateMany()` | Modifying existing documents. | Both Projects |
-| **D**elete | `db.collection.deleteOne()` / `deleteMany()` | Removing documents from a collection. | Both Projects |
-
-### 2. Advanced Operations
-
-| Operation | MongoDB Method | Key Skill Demonstrated |
+| Field | Description | Type Example |
 | :--- | :--- | :--- |
-| **Aggregation** | `db.collection.aggregate()` | Performing complex data processing, like calculating sums, averages, grouping by fields, and running multi-stage pipelines. |
-| **Filtering/Sorting** | `$lt`, `$gt`, `$eq`, `$sort` | Advanced querying using comparison and logical operators, and ordering results by metrics (e.g., box office, publication year). |
-| **Projection** | `{ field: 1, _id: 0 }` | Shaping query results to include or exclude specific fields for clean, targeted output. |
-
----
-
-## 📚 Mini-Project Overviews
-
-This repository contains two distinct mini-projects developed to solidify the skills learned during the bootcamp by applying them to real-world scenarios.
-
-### 1. 📖 Library Management System
-
-| Detail | Description |
-| :--- | :--- |
-| **Focus** | Managing **book records** with complex data structures like embedded documents (`Author details`) and arrays (`Borrowed History`, `Ratings`). |
-| **Key Skill** | Advanced **CRUD operations** and writing **Aggregation Queries** to analyze library statistics (e.g., total books per genre, average ratings per publisher). |
-| **File** | `Library_Management_System_MiniProject.js` |
-| **Dedicated README** | [**Library Management System README**](./Library_Management_System_MiniProject/README.md) |
-
-### 2. 🎬 Movie Database System
-
-| Detail | Description |
-| :--- | :--- |
-| **Focus** | Building a comprehensive **movie database**, including details on cast, director, box office, and awards. |
-| **Key Skill** | Complex **filtering** and **sorting** queries, and using the **Aggregation Framework** to group movies by genre or analyze data points like awards and box office revenue. |
-| **File** | `movie_database.js` |
-| **Dedicated README** | [**Movie Database System README**](./Movie_Database_System/README.md) |
+| `title` | Title of the book | String |
+| `author` | Author details (name, born year) | Object/Embedded Document |
+| `genre` | Book category | Array/String |
+| `publisher` | Publishing company | String |
+| `publishedYear` | Year of publication | Integer |
+| `pages` | Total page count | Integer |
+| `language` | Original language of the book | String |
+| `availableCopies` | Current stock | Integer |
+| `ratings` | Array of rating objects | Array of Objects |
+| `borrowedHistory` | List of past borrows | Array |
+| `tags` | Keywords for categorization | Array |
 
 ---
 
 ## ⚙️ Setup and Execution Instructions
 
-To run the commands for either project, you will need **MongoDB** installed (locally or via a cloud service like Atlas) and a way to execute the commands.
+All necessary MongoDB commands are contained within the dedicated JavaScript file.
 
-1.  **Prerequisites:** Ensure you have the **MongoDB Server** running and the **Mongo Shell** or **MongoDB Compass** installed.
-2.  **Clone Repository:** Download or clone this repository to your local machine.
-3.  **Run Commands:**
-    * Open your Mongo Shell.
-    * Use the `load()` command to execute the project files:
-        ```bash
-        # For the Library Project
-        load('Library_Management_System_MiniProject.js')
+1.  **Open MongoDB Environment:** Start **MongoDB Compass** or open your **Mongo Shell** terminal.
+2.  **Select Database:** Run the following command to create and use the project's database:
+    ```bash
+    use libraryDB
+    ```
+3.  **Run Commands:** Execute all the commands found in the **`Library_Management_System_MiniProject.js`** file.
+4.  **Explore:** Begin exploring the data by executing your own CRUD and filtering operations!
 
-        # For the Movie Project
-        load('movie_database.js')
-        ```
+---
+
+## 📄 Files Included
+
+| File | Description |
+| :--- | :--- |
+| **`Library_Management_System_MiniProject.js`** | **The main script** containing all MongoDB insert, CRUD, and aggregation commands. |
+| `README.md` | This project documentation file. |
 
 ---
 
@@ -92,5 +72,6 @@ To run the commands for either project, you will need **MongoDB** installed (loc
 **Siddharth Kumar**
 
 * **Bootcamp:** LetsUpgrade MongoDB 3 Days Bootcamp
-* **Created Date:** October 2025
-* **License:** MIT License (or appropriate license)
+* **Created Date:** October 2025 (Assumed)
+
+---
