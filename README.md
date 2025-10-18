@@ -55,7 +55,7 @@ This repository contains two distinct mini-projects developed to solidify the sk
 | **Focus** | Managing **book records** with complex data structures like embedded documents (`Author details`) and arrays (`Borrowed History`, `Ratings`). |
 | **Key Skill** | Advanced **CRUD operations** and writing **Aggregation Queries** to analyze library statistics (e.g., total books per genre, average ratings per publisher). |
 | **File** | `Library_Management_System_MiniProject.js` |
-| **Dedicated README** | [**Library Management System README**](./Library_Management_System/README.md) |
+| **Dedicated README** | [**Library Management System README**](https://github.com/SID-CSE/LetsUpgrade_MongoDB/blob/Movie_Database_System/README.md) |
 
 ### 2. 🎬 Movie Database System
 
