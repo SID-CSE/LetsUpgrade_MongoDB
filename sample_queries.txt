@@ -1,0 +1,44 @@
+# 1. Show all movies
+db.movies.find();
+
+# 2. Filter movies by language
+db.movies.find({ language: "Hindi" });
+
+# 3. Filter movies by director
+db.movies.find({ "director.name": "Asha Rao" });
+
+# 4. Movies released after 2015
+db.movies.find({ year: { $gte: 2015 } });
+
+# 5. Sort movies by newest first
+db.movies.find().sort({ year: -1 });
+
+# 6. Update rating of a movie
+db.movies.updateOne({ title: "Midnight Run" }, { $set: { "ratings.0.score": 7.8 } });
+
+# 7. Increment runtime for movies older than 2015
+db.movies.updateMany({ year: { $lt: 2015 } }, { $inc: { runtimeMin: 5 } });
+
+# 8. Add a new genre to a movie
+db.movies.updateOne({ title: "Celestial" }, { $push: { genres: "Fantasy" } });
+
+# 9. Delete one movie by title
+db.movies.deleteOne({ title: "Laugh Lines" });
+
+# 10. Delete movies with IMDb rating less than 7
+db.movies.deleteMany({ "ratings.source": "IMDb", "ratings.score": { $lt: 7 } });
+
+# 11. Filter movies in specific genres (e.g., Sci-Fi)
+db.movies.find({ genres: "Sci-Fi" });
+
+# 12. Highly rated movies (IMDb score > 8)
+db.movies.find({ "ratings.source": "IMDb", "ratings.score": { $gt: 8 } });
+
+# 13. Movies with tags "revenge" or "suspense"
+db.movies.find({ tags: { $in: ["revenge", "suspense"] } });
+
+# 14. Count movies by language
+db.movies.aggregate([{ $group: { _id: "$language", totalMovies: { $sum: 1 } } }]);
+
+# 15. Average box office collection of all movies
+db.movies.aggregate([{ $group: { _id: null, avgBoxOfficeUSD: { $avg: "$boxOfficeUSD" } } }]);

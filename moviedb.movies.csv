@@ -1,0 +1,11 @@
+_id,title,year,genres[0],genres[1],director.name,director.born,cast[0],cast[1],cast[2],runtimeMin,language,country,ratings[0].source,ratings[1].source,ratings[0].score,ratings[1].score,boxOfficeUSD,budgetUSD,released,awards.wins,awards.nominations,tags[0],tags[1]
+1,Midnight Run,2015,Drama,Thriller,Asha Rao,1976,Ravi Kumar,Maya Sen,Arjun Roy,128,Hindi,India,IMDb,Critic,7.4,8,4200000,1500000,2015-08-21T00:00:00.000Z,2,5,road,revenge
+2,Celestial,2018,Sci-Fi,Adventure,Marcus Li,1980,Evelyn Park,Tomás Silva,,140,English,USA,IMDb,RottenTomatoes,8.2,88,98000000,40000000,2018-11-02T00:00:00.000Z,6,11,space,epic
+3,The Quiet Orchard,2012,Drama,,Asha Rao,1976,Neel Patel,Sana Qureshi,,95,Hindi,India,IMDb,,6.8,,800000,300000,2012-03-15T00:00:00.000Z,1,2,art,family
+4,City of Mirrors,2020,Crime,Mystery,Liam O'Connor,1972,Eva Wong,Ravi Kumar,,110,English,UK,IMDb,Critic,7.9,7.5,21000000,12000000,2020-05-10T00:00:00.000Z,3,8,noir,detective
+5,Sunny Side Up,2021,Comedy,Romance,Priya Menon,1988,Maya Sen,Adil Khan,,102,Hindi,India,IMDb,Audience,7.1,78,5200000,1000000,2021-02-12T00:00:00.000Z,0,3,romcom,
+6,Neon Samurai,2019,Action,Sci-Fi,Hiro Tanaka,1982,Takeshi Ito,Eva Wong,Tomás Silva,132,Japanese,Japan,IMDb,Critic,8.5,9,65000000,30000000,2019-09-06T00:00:00.000Z,10,14,cyberpunk,martial
+7,Hidden Currents,2010,Documentary,,Lina Gomez,1969,Narrator: Priya Menon,,,78,Spanish,Mexico,IMDb,,7,,120000,50000,2010-07-28T00:00:00.000Z,1,1,environment,
+8,Echoes of Tomorrow,2022,Sci-Fi,Drama,Marcus Li,1980,Evelyn Park,Neel Patel,,150,English,USA,IMDb,RottenTomatoes,8.7,92,160000000,80000000,2022-12-01T00:00:00.000Z,12,20,time,philosophy
+9,Small Fires,2016,Thriller,Crime,Priya Menon,1988,Arjun Roy,Adil Khan,,105,Hindi,India,IMDb,,6.9,,2300000,900000,2016-10-11T00:00:00.000Z,0,1,suspense,
+10,Laugh Lines,2013,Comedy,,Samir Gupta,1975,Maya Sen,Tomás Silva,,98,Hindi,India,IMDb,,6.2,,1400000,600000,2013-04-05T00:00:00.000Z,0,0,satire,
